@@ -1,0 +1,36 @@
+html,
+body,
+#map-id {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.legend {
+  padding: 10px;
+  font-family: Sanchez, serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #555;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  }
+
+
+.bar {
+  fill: orange;
+}
+
+.bar:hover {
+  fill: green;
+}

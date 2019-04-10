@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RentQuest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-- Calling java script novel JS to rotate images-->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<style>
+img {
+  float: left;
+}
+
+h1 {
+  background:#dbdcdd;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
+.svg-container {
+	margin: 0 auto;
+}
+
+</style>
+
+<body>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <!--  <a class="navbar-brand" href="index.html" title="Home" 	>RentQuest</a> -->
+	  <a class="navbar-brand" title="Home" 	>RentQuest</a>
+	  
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+	
+      <li> <a href="rent_by_city">Find rentals by city</a></li>
+      
+      <li> <a href="rent_by_region">Find rentals by region</a></li>
+	  <li> <a href="map">Map View</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Rent Quest</h1>
+        <p>We help you in your quest</p>
+      </div>
+    </div>
+<!-- =========================== -->
+<span class="border">
+<div class="container-fluid text-center">    
+  <div class="row content">  
+	
+    <div class="col-sm-12 text-left bg-lightgrey" >  
+	     
+		 <div class="row"> 
+			<div class="column">
+			
+			    
+				<img class="property" src="static/images/mainimage.jpg" width="100%">
+				<img class="property" src="static/images/image1.jpg" width="100%">
+				<img class="property" src="static/images/image2.jpg" width="100%">
+				<img class="property" src="static/images/image3.jpg" width="100%">
+				<!-- <img src="{{url_for('static', filename='image2.jpg')}}" -->
+				
+				
+				
+
+			</div>
+			
+		</div>
+		
+		<h1>Bay Area Rental</h1>
+	
+	  <hr>	
+	  
+	
+      <p style="font-size:20px;">Find a perfect rental in Bay area can be a challange.
+	  <p style="font-size:20px;">So many online services
+	  <p style="font-size:20px;">Where to look ?
+	  <p style="font-size:20px;">Which location has the best deals ?
+	  <p> </p>
+	  <p style="font-size:20px;">
+	  Here we have analyzed more than 14000 various active bay area rentals and organized them under various categories to help you find a dream place.
+	  
+	  <br>
+	  <br>
+
+
+</p>
+      
+    </div>
+
+ </div>
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-12" style="background-color:lavender;">
+    <br>
+	<h1>Bay Area Rental Statistics</h1>
+
+<h2>Rental visualizations<h2>
+
+This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.<br>
+
+</p>
+    </div>
+
+<!-- ====================================== -->
+	
+	
+	
+ 
+      </div>
+      <div class="col-md-12">
+        <div id="pie"></div>
+      </div>
+      <div class="col-md-12">
+        <div id="gauge"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
+  <script>
+    w3.slideshow(".property", 1900);
+</script>
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
