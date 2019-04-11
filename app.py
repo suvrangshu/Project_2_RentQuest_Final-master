@@ -75,7 +75,7 @@ def maps():
                 dic[j] = k
         lista.append(dic)
     
-    return jsonify(lista[1:1000])    	
+    return jsonify(lista[1:4000])    	
 	
 
 
