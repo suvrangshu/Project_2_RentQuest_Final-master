@@ -39,7 +39,7 @@ Using Python, Java, flask, D3, Leafty, java library .
 
 Please go to folder mongodb_data
 
-create mongodb **database** called - **craigslist_db**
+create mongodb **database** called - **rent_DB**
 
 import the **collection** named - **craigslist_collection**
 
