@@ -33,7 +33,17 @@ Using Python pulled the data in Mongodb
 
 Using Python, Java, flask, D3, Leafty, java library .
 
-How to execute:
+
+
+## How to execute the code?
+
+Please go to folder mongodb_data
+
+create mongodb **database** called - **craigslist_db**
+
+import the **collection** named - **craigslist_collection**
+
+
 
 - Open Git bash
 - execute app.py
@@ -56,4 +66,8 @@ Please navigate through various options to see our analysis
 
 
 ## Used Java script library from w3schools, which helps to keep rendering the images in our landing page.
+
+
+
+
 
